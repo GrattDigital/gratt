@@ -4,24 +4,14 @@ title: Рекламное агентство
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
-	{# variable example #}
-	<h1>{{title}}</h1>
+<div class="wrap__cup">
+  <div class="wrap__cup_content">
+    <div class="note">
+      <h1 class="cup">GRATT Digital</h1>
+      <p class="cup__text">Сайт находится в разработке</p>
+    </div>
+  </div>
+</div>
 
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
 
 {% endblock %}
