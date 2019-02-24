@@ -12,17 +12,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,900" rel="stylesheet"/>
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
+
   <body>
-
-    <!-- BEGIN content -->
+    <!-- Блок вывода данных -->
     <div class="out">
+    <!-- BEGIN content -->
+      {% include "partials/_header.html" %}
       {% block content %}{% endblock %}
-    </div>
+      {% include "partials/_footer.html" %}
     <!-- END content -->
-
+    </div>
+    <!-- Конец блока вывода данных -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
-
   </body>
 </html>

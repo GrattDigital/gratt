@@ -1,0 +1,33 @@
+.merge
+  &_wrapper
+    max-width: 100%
+    background-color: #000000
+
+.merge
+  &_content
+    display: flex
+    min-height: 80vh
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-align-items: center
+    align-items: center
+    max-width: 1680px
+    margin: 0 auto
+    color: #FFF
+    font-size: 6rem
+    +r(1200)
+      font-size: 5rem
+    +r(1000)
+      font-size: 4rem
+    +r(800)
+      font-size: 2.5rem
+    +r(600)
+      font-size: 2rem
+    +r(400)
+      font-size: 1.5rem
+  &__text
+    font-weight: 300
+    color: $col_l 

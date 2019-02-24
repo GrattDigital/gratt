@@ -1,0 +1,21 @@
+<section class="section cases wrap clearfix">
+<!--     <div class="wrap_content"> -->
+  <h2 class="title case_title wrap_content">Кейсы <span class="green">Cases</span></h2>
+    <!-- </div> -->
+  {% import "data/cases.html" as cases %}
+    {% for item in cases.item %}
+      <li class="case__item" style="background: url('{{item.bg}}') no-repeat top center; background-size: cover;">
+
+        <div class="overlay">
+          <div class="wrap_content case">
+            <img src="{{item.logo}}" alt="" class="case__logo"/>
+            <h2 class="case__title">{{item.title}}</h2>
+            <p class="case__description">{{item.description}}</p>
+          </div>
+        </div>
+      </li>
+    {%endfor%}
+  <a href="#" class="case__more">Смотреть все кейсы</a>
+
+
+</section>

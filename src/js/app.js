@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello.js';
+import navstate from './lib/navstate.js';
 
-sayHello();
+navstate();
