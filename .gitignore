@@ -30,6 +30,3 @@ nbproject
 _tmp
 node_modules
 bower_components
-
-# File ignore
-docs/CNAME
