@@ -7,6 +7,7 @@
     margin-top: 15vh 
     font-size: 4.5vh
     @media screen and (orientation: portrait)
+      margin-top: 6vh
       font-size: 5vw
   &__img
     position: absolute
@@ -21,6 +22,8 @@
     margin-top: 10em
     margin-bottom: 1em
     color: $col_l
+    @media screen and (orientation: portrait)
+      margin-top: 2vw
   &__link
     display: block
     text-decoration: none
@@ -31,9 +34,62 @@
     &:hover
       color: $col_accent 
 
-    
 .content__block
   float: right
   width: 40%
   @media screen and (orientation: portrait)
     width: 100% 
+
+.social
+  &__block
+    display: block
+    margin-top: 1em
+    margin-bottom: 1em
+  &__fb
+    display: inline-block
+    width: 36px
+    height: 36px
+    background-image: url(../img/social_set.png)
+    background-repeat: no-repeat
+    -webkit-background-size: 144px 
+    -o-background-size: 144px 
+    background-size: 144px
+    background-position: 0px 0px
+    &:hover
+      background-position: 0px -36px
+  &__inst
+    display: inline-block
+    width: 36px
+    height: 36px
+    background-image: url(../img/social_set.png)
+    background-repeat: no-repeat
+    -webkit-background-size: 144px 
+    -o-background-size: 144px 
+    background-size: 144px
+    background-position: -36px 0px
+    &:hover
+      background-position: -36px -36px
+  &__yt
+    display: inline-block
+    width: 36px
+    height: 36px
+    background-image: url(../img/social_set.png)
+    background-repeat: no-repeat
+    -webkit-background-size: 144px 
+    -o-background-size: 144px 
+    background-size: 144px
+    background-position: -72px 0px
+    &:hover
+      background-position: -72px -36px
+  &__vk
+    display: inline-block
+    width: 36px
+    height: 36px
+    background-image: url(../img/social_set.png)
+    background-repeat: no-repeat
+    -webkit-background-size: 144px 
+    -o-background-size: 144px 
+    background-size: 144px
+    background-position: -108px 0px
+    &:hover
+      background-position: -108px -36px
