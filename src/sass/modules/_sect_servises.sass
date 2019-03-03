@@ -1,0 +1,132 @@
+.servises
+  background: $col_bg_d
+  font-size: 3.4rem
+  &__wrap
+    height: 75vh
+    position: relative
+  &__item
+    &_top
+      position: absolute
+      border: 1px solid rgba($col_l, 0.5)
+      width: 33%
+      height: 25vh
+      background-color: $col_bg_d
+      top: calc(50% - 25vh)
+      +r(812)
+        height: initial 
+      &:hover
+        height: 35vh
+        top: calc(50% - 35vh)
+        background-color: $col_g
+        border: none
+        & .servises__description
+          display: block
+        +r(812)
+          height: initial 
+      &:nth-child(1)
+        left: 0.5%
+        +r(812)
+          left: initial
+          top: initial 
+      &:nth-child(2)
+        left: 33.5%
+        +r(812)
+          left: initial
+          top: initial 
+      &:nth-child(3)
+        left: 66.5%
+        +r(812)
+          left: initial
+          top: initial 
+
+
+      +r(812)
+        position: relative
+        width: 100%
+        height: initial
+
+
+    &_bottom
+      position: absolute
+      border: 1px solid rgba($col_l, 0.5)
+      width: 33%
+      height: 25vh
+      background-color: $col_bg_d
+      bottom: calc(50% - 25vh)
+      &:hover
+        height: 35vh
+        bottom: calc(50% - 35vh)
+        background-color: $col_g
+        border: none
+        & .servises__description
+          display: block
+        +r(812)
+          height: initial 
+      &:nth-child(4)
+        left: 0.5%
+        +r(812)
+          left: initial
+          bottom: initial 
+      &:nth-child(5)
+        left: 33.5%
+        +r(812)
+          left: initial
+          bottom: initial 
+      &:nth-child(6)
+        left: 66.5%
+        +r(812)
+          left: initial
+          bottom: initial 
+
+      +r(812)
+        position: relative
+        width: 100% 
+        height: initial 
+
+
+  &__title
+    font-weight: 300
+    font-size: 4vh
+    margin-top: 3vh
+    margin-left: 3vh
+    line-height: 2
+    +r(812)
+      margin-top: 0 
+    color: $col_l
+  &__description
+    margin-top: 3vh
+    margin-left: 3vh
+    margin-right: 3vh
+    font-size: 1.4vh
+    color: $col_l
+    display: none
+    +r(1023)
+      font-size: calc(7px + 1.4vh) 
+    & li
+      margin-bottom: 0.7em
+      padding-bottom: 0.5em
+      +r(812)
+        margin-bottom: initial 
+
+
+
+
+
+
+.test1
+  position: absolute
+  width: 100%
+  height: 25vh
+  background-color: red
+  opacity: 0.7
+  top: calc(50% - 25vh)
+  &:hover
+    height: 35vh
+    top: calc(50% - 35vh) 
+.test2
+  position: absolute
+  width: 100%
+  height: 25vh
+  background-color: blue
+  opacity: 0.7
+  bottom: calc(50% - 25vh)
