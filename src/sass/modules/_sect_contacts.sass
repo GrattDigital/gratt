@@ -1,3 +1,39 @@
-.contacts_wrapper
-  min-height: 100vh
-  background-color: $col_bg_d 
+.contacts
+  &_wrapper
+    position: relative
+    min-height: 100vh
+    background-color: $col_bg_d 
+  &__title
+    margin-top: 15vh 
+    font-size: 4.5vh
+    @media screen and (orientation: portrait)
+      font-size: 5vw
+  &__img
+    position: absolute
+    width: 55%
+    bottom: 0
+    left: 0
+    @media screen and (orientation: portrait)
+      width: 100% 
+  &_us
+    font-weight: 300
+    font-size: 1.5vh
+    margin-top: 10em
+    margin-bottom: 1em
+    color: $col_l
+  &__link
+    display: block
+    text-decoration: none
+    font-weight: 600
+    font-size: 4vh
+    line-height: 5vh 
+    color: $col_l
+    &:hover
+      color: $col_accent 
+
+    
+.content__block
+  float: right
+  width: 40%
+  @media screen and (orientation: portrait)
+    width: 100% 
