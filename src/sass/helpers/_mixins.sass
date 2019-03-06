@@ -35,8 +35,13 @@
   white-space: nowrap
 
 =hover
-  .no-touch &:hover
+  .no-touchevents &:hover,
+  .touchevents &:active
     @content
+    cursor: pointer
+
+
+
 
 %pseudo
   position: relative
