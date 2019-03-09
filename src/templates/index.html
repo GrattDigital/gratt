@@ -1,17 +1,12 @@
 ---
-title: GRATT Digital
+title: GRATT Digital | Главная
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-<div class="wrap__cup">
-  <div class="wrap__cup_content">
-    <div class="note">
-      <h1 class="cup">GRATT Digital</h1>
-      <p class="cup__text">Сайт находится в разработке</p>
-    </div>
-  </div>
-</div>
-
-
+  {% include "modules/_sect_hero.html" %}
+  {% include "modules/_sect_servises.html" %}
+  {% include "modules/_sect_cases.html" %}
+  {% include "modules/_sect_merge.html" %}
+  {% include "modules/_sect_contacts.html" %}
 {% endblock %}

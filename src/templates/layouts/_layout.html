@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <mark><script src="../js/modernizr-custom.js"></script></mark>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#fff"/>
@@ -11,18 +12,21 @@
     <link rel="stylesheet" media="all" href="css/app.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,900" rel="stylesheet"/>
     {# {% include "../partials/_media-tags.html" %} #}
+
   </head>
+
   <body>
-
-    <!-- BEGIN content -->
+    <!-- Блок вывода данных -->
     <div class="out">
+    <!-- BEGIN content -->
+      {% include "partials/_header.html" %}
       {% block content %}{% endblock %}
-    </div>
+      {% include "partials/_footer.html" %}
     <!-- END content -->
-
+    </div>
+    <!-- Конец блока вывода данных -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
-
   </body>
 </html>

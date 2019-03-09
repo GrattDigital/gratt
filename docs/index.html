@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>GRATT Digital</title>
+    <title>GRATT Digital | Главная</title>
+    <mark>
+      <script src="../js/modernizr-custom.js"></script>
+    </mark>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fff" />
@@ -11,18 +14,170 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,900" rel="stylesheet" />
   </head>
   <body>
-    <!-- BEGIN content -->
+    <!-- Блок вывода данных -->
     <div class="out">
-      <div class="wrap__cup">
-        <div class="wrap__cup_content">
-          <div class="note">
-            <h1 class="cup">GRATT Digital</h1>
-            <p class="cup__text">Сайт находится в разработке</p>
+      <!-- BEGIN content -->
+      <header class="header clearfix">
+        <div class="wrap__content">
+          <nav class="navbar clearfix">
+            <div class="line">
+              <div class="wrap_content clearfix">
+                <div class="menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <a class="logo__link" href="/index.html"><img class="logo__img" src="../img/nb_gd_logo.png" alt="логотип" /></a>
+                <ul class="navbar__list">
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/servises.html">Услуги</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/cases.html">Кейсы</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/about_us.html">О нас</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/contacts.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section hero wrap clearfix">
+        <div class="hero_wrapper">
+          <div class="wrap_content">
+            <h1 class="visually-hidden">GRATT Digital</h1>
+            <p class="slogan">Лучше о нас скажут только наши работы.</p>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="section servises wrap">
+        <h2 class="title title__servises wrap_content">Услуги<span class="green">Servises</span></h2>
+        <ul class="servises__wrap wrap_content">
+          <li class="servises__item_top clearfix">
+            <h2 class="servises__title">Creative</h2>
+            <ul class="servises__description">
+              <li>Разработка креативных концепций, активаций и рекламных кампаний в digital, а также offline</li>
+            </ul>
+          </li>
+          <li class="servises__item_top clearfix">
+            <h2 class="servises__title">Design</h2>
+            <ul class="servises__description">
+              <li>Графический дизайн</li>
+              <li>WEB дизайн</li>
+              <li>Дизайн презентаций</li>
+            </ul>
+          </li>
+          <li class="servises__item_top clearfix">
+            <h2 class="servises__title">SMM</h2>
+            <ul class="servises__description">
+              <li>Контент-маркетинг</li>
+              <li>Комьюнити-менеджмент</li>
+              <li>Таргетированная реклама</li>
+            </ul>
+          </li>
+          <li class="servises__item_bottom clearfix">
+            <h2 class="servises__title">VIDEO</h2>
+            <ul class="servises__description">
+              <li>Рекламные ролики</li>
+              <li>Корпоративные фильмы</li>
+              <li>Репортажная съемка</li>
+              <li>Аэросъемка</li>
+              <li>Видео 360</li>
+              <li>Интервью</li>
+            </ul>
+          </li>
+          <li class="servises__item_bottom clearfix">
+            <h2 class="servises__title">PHOTO</h2>
+            <ul class="servises__description">
+              <li>Рекламная фотография</li>
+              <li>Предметная фотосъемка</li>
+              <li>Репортажная фотосъемка</li>
+            </ul>
+          </li>
+          <li class="servises__item_bottom clearfix">
+            <h2 class="servises__title">MOTION</h2>
+            <ul class="servises__description">
+              <li>Motion-дизайн</li>
+              <li>Анимированные презентации</li>
+              <li>VFX</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="section cases wrap clearfix">
+        <!--     <div class="wrap_content"> -->
+        <h2 class="cases title title__case wrap_content">Кейсы<span class="green">Cases</span></h2>
+        <!-- </div> -->
+        <li class="case__item clearfix" style="background: url('../img/ip_cbg_art.jpg') no-repeat top center; background-size: cover;">
+          <a href="/case_philos.html" class="overlay">
+            <div class="wrap_content case">
+              <img src="../img/ip_cl_art.png" alt="" class="case__logo" />
+              <h2 class="case__title">Философия дизайна</h2>
+              <p class="case__description">Запись интервью с британским дизайнером интерьеров Кристофером Эшем для проекта Art View House</p>
+            </div>
+          </a>
+        </li>
+        <li class="case__item clearfix" style="background: url('../img/ip_cbg_beauty.jpg') no-repeat top center; background-size: cover;">
+          <a href="/case_philos.html" class="overlay">
+            <div class="wrap_content case">
+              <img src="../img/ip_cl_beauty.png" alt="" class="case__logo" />
+              <h2 class="case__title">Beauty bar</h2>
+              <p class="case__description">Съемка рекламного ролика для Instagram. Клиент - Петербургский салон красоты Post Scriptum</p>
+            </div>
+          </a>
+        </li>
+        <li class="case__item clearfix" style="background: url('../img/ip_cbg_stoma.jpg') no-repeat top center; background-size: cover;">
+          <a href="/case_philos.html" class="overlay">
+            <div class="wrap_content case">
+              <img src="../img/ip_cl_stoma.png" alt="" class="case__logo" />
+              <h2 class="case__title">Эмоции, которыми нужно делиться</h2>
+              <p class="case__description">Разработка концепции и дизайн-макетов для стоматологической клиники в Великом Новгороде</p>
+            </div>
+          </a>
+        </li>
+        <a href="/cases.html" class="case__more">Смотреть все кейсы</a>
+      </section>
+      <section class="wrap merge clearfix">
+        <div class="merge_wrapper">
+          <div class="wrap_content merge_content">
+            <p class="merge__text">Свяжитесь с нами любым удобным для вас способом. Опишите задачу или задайте интересующий вопрос. Благодаря подробным вводным, мы сможем наиболее подготовлено подойти именно к вашему запросу.</p>
+            <img src="../img/ip_m.jpg" alt="" class="merge__img" />
+          </div>
+        </div>
+      </section>
+      <section class="section contacts wrap clearfix">
+        <div class="contacts_wrapper">
+          <div class="wrap_content">
+            <img src="../img/ip_cont.jpg" alt="" class="contacts__img" />
+            <div class="content__block">
+              <h2 class="title contacts__title">Давайте сделаем что-то классное!</h2>
+              <p class="contacts_us">Связаться</p>
+              <a href="tel:88123318740" class="contacts__link">(812) 331-87-40</a>
+              <a href="mailto:hello@grattdigital.ru" class="contacts__link">hello@grattdigital.ru</a>
+              <div class="social__block">
+                <a href="https://www.facebook.com/firmagratt" class="social__fb"></a>
+                <a href="https://www.instagram.com/firmagratt/" class="social__inst"></a>
+                <a href="https://www.youtube.com/channel/UCEUJCUSTTBwA30Xs0SFzxxQ" class="social__yt"></a>
+                <a href="https://vk.com/grattdigital" class="social__vk"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer wrap clearfix">
+        <div class="line">
+          <p class="footer_text">2019, GRATT DIGITAL</p>
+        </div>
+      </footer>
+      <!-- END content -->
     </div>
-    <!-- END content -->
+    <!-- Конец блока вывода данных -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->

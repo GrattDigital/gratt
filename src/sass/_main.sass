@@ -18,7 +18,39 @@ html
   content: ""
   clear: both 
 
-// .wrap
-//   max-width: 1600px
-//   margin: 0 auto
+.wrap
+  max-width: 1680px
+  margin: 0 auto
+  &_content
+    max-width: 1348px
+    margin: 0 auto
+    padding: 0 20px
+  &__video iframe
+    // position: relative
+    overflow: hidden
+    height: 100%
+    width: 100%
+    max-width: 720px
+    min-height: 576px 
+    margin: 0 auto
 /* конец глобальных параметров */
+
+.section
+  min-height: 100vh
+  width: 100%
+
+.title
+  font-weight: 300
+  color: $col_l
+  &__case
+    line-height: 15vh
+    font-size: 5vh
+  &__servises
+    font-size: 5vh
+    padding-top: 10vh
+    +r(767)
+      line-height: 10vh
+
+.green
+  color: $col_g
+  margin-left: .5em
