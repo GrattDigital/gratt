@@ -6,7 +6,7 @@
     {% for item in cases.item %}
       <li class="case__item clearfix" style="background: url('{{item.bg}}') no-repeat top center; background-size: cover;">
 
-        <a href="/case_philos.html" class="overlay">
+        <a href="{{item.link}}" class="overlay">
           <div class="wrap_content case">
             <img src="{{item.logo}}" alt="" class="case__logo"/>
             <h2 class="case__title">{{item.title}}</h2>

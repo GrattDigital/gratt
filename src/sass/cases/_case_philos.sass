@@ -2,9 +2,39 @@
   position: relative
   background-color: $col_bg_d 
 
+.sigle-case
+  display: block
+  width: 100% 
+  font-weight: 300
+  margin-left: 5vw
+  margin-top: 2vh
+  margin-bottom: 2vh
+  @media screen and (orientation: portrait)
+    margin-left: 5vh
+    margin-top: 2vw
+    margin-bottom: 2vw
+  
+  
+
+.video
+  &-wrap
+    display: flex
+    height: 80%
+    -webkit-align-items: center
+    align-items: center
+    -webkit-flex-wrap: wrap 
+    -ms-flex-wrap: wrap 
+    flex-wrap: wrap 
+  &-content
+    display: block
+    width: 85%
+    margin: 0 auto
+
+
 .video-block
   position: relative
-  padding-bottom: 56.25% /* sets the height of the container to 16:9 (4:3 - 75%) */
+  display: block
+  padding-bottom: 56.25% /* 56.25%  sets the height of the container to 16:9 (4:3 - 75%) */
   padding-top: 0px
   height: 0
   overflow: hidden
@@ -17,125 +47,126 @@
   height: 100%
 
 .case__showreel
-  float: right
-  margin-top: 10vh
-  width: 60%
+    position: absolute
+    bottom: 8vh
+    left: 30%
+    right: 0%
+    border: 1px solid rgba($col_l, .5)
+    height: calc(100vh - 130px - 8vh) 
+    margin-top: 130px
+    @media screen and (orientation: portrait)
+      position: relative
+      width: 100%
+      height: initial 
+      margin-top: 0
+      left: 0
+      border: none
+    +r(1024)
+      height: calc(100vh - 55px - 8vh)
+      margin-top: 55px
 
 .case
+  &-logo
+    display: inline-block
+    max-width: 15vw
+    margin-top: 10vh 
+    @media screen and (orientation: portrait)
+      margin-top: 20vh
+  &-imgset
+    width: 90%
+    margin: 0 auto
+    
+  &-task
+    font-weight: 300
+    font-size: 1.5vw
+    margin-top: 1em 
+    color: rgba($col_l, .7)
+  &-description
+    font-weight: 300
+    color: $col_l
+    font-size: 2vh
+    margin-bottom: 0.5em
+    @media screen and (orientation: portrait)
+      font-size: 2vw
+
+.case
+  &__descript
+    position: absolute
+    bottom: 8vh
+    left: 0
+    right: 70%
+    // padding-left: 20px
+    border: 1px solid rgba($col_l, .5)
+    height: calc(100vh - 130px - 8vh) 
+    margin-top: 130px
+    @media screen and (orientation: portrait)
+      position: relative
+      // width: 100%
+      height: initial
+      margin-top: 0
+      margin-bottom: 5vh 
+      border: none
+    +r(1024)
+      height: calc(100vh - 55px - 8vh)
+      margin-top: 55px
+
+
   &__arr
     &_all
       position: absolute
       bottom: 0
-      height: 8vh
       border: 1px solid rgba($col_l, .5)
       left: 0%
       right: 70%
-      // &:before
-      //   display: block
-      //   content: ""
-      //   width: 100%
-      //   height: 100%
-      //   background-color: red
+      text-align: center
+      &:before
+        display: block
+        position: absolute
+        content: ""
+        width: 100%
+        height: 100%
+        // background-color: rgba(red, .2)
     &_next
       position: absolute
       bottom: 0%
-      height: 8vh
       border: 1px solid rgba($col_l, .5)
       left: 30%
       right: 0
-      // background-color: rgba($col_bg_d, .5)
-      // &:hover
-      //   background-color: rgba($col_l, .1)
+      text-align: center
+      &:before
+        display: block
+        position: absolute
+        content: ""
+        width: 100%
+        height: 100%
+        background: url("../img/ip_cbg_beauty.jpg")
+        opacity: .5 
+  &_nav_link
+    position: relative
+    display: block
+    text-decoration: none
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    font-weight: 300
+    font-size: 1.2vh
+    line-height: 8vh
+    color: $col_l
+    background-color: rgba($col_bg_d, 0.5)
+    &:hover
+      background-color: rgba($col_bg_d, 0.1)
+      color: $col_accent 
 
-.case__arr_all
-  background-color: red
-  +hover
-    background-color: blue
-    cursor: pointer
+.tag
+  display: inline-block
+  background: green
+  color: $col_l
+  line-height: 4vh
+  font-size: 3vh
+  padding: .5vh
+  @media screen and (orientation: portrait)
+    line-height: 4vw
+    font-size: 3vw
+    padding: .5vw
 
-
-
-// .s_case
-//   &__desc
-//     position: absolute
-//     left: 0
-//     bottom: 8vh
-//     width: 35%
-//     height: 77.5vh
-//     border: 1px solid rgba($col_l, .5)
-//     &_2
-//       position: relative
-//       display: inline-block
-//       padding-top: 20vh
-//       width: 33% 
-//     &_3
-//       position: relative
-//       float: right
-//       padding-top: 20vh
-//       width: 65% 
-//   &__demo
-//     position: absolute
-//     right: 0
-//     bottom: 8vh
-//     width: 65%
-//     height: 77.5vh
-//     border: 1px solid rgba($col_l, .5)
-//   &__title
-//     // position: relative
-//     font-size: 5vh
-
-
-//   &__nav
-//     position: absolute
-//     bottom: 0
-//     left: 0
-//     right: 0
-//     &_2all
-//       position: relative
-//       float: left
-//       width: 35%
-//       text-align: center
-//       border: 1px solid rgba($col_l, .5)
-//     &_2next
-//       position: relative
-//       float: left
-//       width: 65%
-//       text-align: center
-//       border: 1px solid rgba($col_l, .5)
-//     &_link
-//       text-decoration: none
-//       margin: 0
-//       padding: 0
-//       font-weight: 300
-//       font-size: 1.5vh
-//       line-height: 8vh
-//       color: $col_l
-//       &:hover
-//         background: rgba($col_l, .2)
-
-// .logo_philos
-//   height: 10vh
-//   margin-bottom: 5vh 
-
-// .task
-//   font-weight: 300
-//   font-size: 2.5vh
-//   color: rgba($col_l, .5)
-//   margin-bottom: 1vh
-// .desc
-//   display: inline-block
-//   font-weight: 300
-//   font-size: 2vh
-//   // width: 30%
-//   color: $col_l
-// .tags
-//   display: inline-block
-//   width: 25%
-//   margin-top: 1vh 
-// .tag
-//   display: inline-block
-//   padding: .3em 1em
-//   margin-right: 10%  
-//   color: $col_l
-//   background: $col_g 
-//   font-size: 2.5vh
