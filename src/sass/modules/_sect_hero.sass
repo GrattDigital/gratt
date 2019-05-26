@@ -1,23 +1,23 @@
 .hero
-  background: url("../img/ip_hbg.jpg")
-  -webkit-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-  background-position: center
+  // background: url("../img/ip_hbg.jpg")
+  // -webkit-background-size: cover
+  // -o-background-size: cover
+  // background-size: cover
+  // background-position: center
 
 .hero_wrapper
   height: 100vh
   position: relative
   font-size: 9.6rem
-  &:before
-    display: block
-    content: ""
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background-color: rgba(92,106,113,.25)
+  // &:before
+  //   display: block
+  //   content: ""
+  //   position: absolute
+  //   top: 0
+  //   bottom: 0
+  //   left: 0
+  //   right: 0
+  //   background-color: rgba(92,106,113,.25)
   +r(1500)
     font-size: 9rem
   +r(1400)
@@ -49,3 +49,31 @@
   color: $col_l
   @media screen and (orientation: landscape)
     font-size: 0.6em
+    
+#background
+  display:none
+  position: absolute
+  top: 50%
+  left: 50%
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -100
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+
+#video_overlay 
+  position: absolute
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -80
+  top: 0%
+  left: 0%
+  background: rgba(0, 0, 0, .3)
+  
+// .hero_video
+//   overflow: hidden
+
