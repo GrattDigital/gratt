@@ -1,5 +1,5 @@
-import navstate from './lib/navstate.js';
-import './lib/services_touch.js';
+import navstate from './lib/navstate';
+import './lib/services_touch';
 
 navstate();
 // touchServices();

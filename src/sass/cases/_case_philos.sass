@@ -54,11 +54,12 @@
     border: 1px solid rgba($col_l, .5)
     height: calc(100vh - 130px - 8vh) 
     margin-top: 130px
+    
     @media screen and (orientation: portrait)
       position: relative
       width: 100%
-      height: initial 
-      margin-top: 0
+      height: initial!important
+      margin-top: 0!important
       left: 0
       border: none
     +r(1024)
@@ -106,15 +107,13 @@
     @media screen and (orientation: portrait)
       position: relative
       // width: 100%
-      height: initial
-      margin-top: 0
+      height: initial!important
+      margin-top: 0!important
       margin-bottom: 5vh 
       border: none
     +r(1024)
       height: calc(100vh - 55px - 8vh)
       margin-top: 55px
-
-
   &__arr
     &_all
       position: absolute

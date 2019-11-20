@@ -12,28 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-    // let servises = document.querySelector('.servises__wrap');
-
-    // let servisesItem = document.querySelector('.servises__item');
-    // servisesItem.addEventListener('touchstart', function(event) {
-    //   event.preventDefault();
-    //   console.log(servisesItem);
-    //   return(servisesItem);
-
-    // });
-
-
   };
 
 });
 
-
-
-// $('.size a').on('click', function (e) {     
-//                     e.preventDefault();
-
-//                     $(this).removeClass("checked");
-//                     $(this).slideToggle();  
-//                  $(this).toggleClass('checked').removeClass('checked');
-
-//                 });
